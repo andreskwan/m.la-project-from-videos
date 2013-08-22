@@ -73,24 +73,26 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;
 	height: 50px;
+	line-height: 50px;
 	padding: 0 2px; 
+
 }
 header #avatar figcaption:after
 {
-	content: ;
+	content: "\e001";
 	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.8;
 }
 header #avatar img 
 {
 	width: 50px;
 	float: left;
 }
-
 header #logo img 
 {
 	width: 80px;
 }
-
 nav
 {
 	background: #878787;
@@ -121,18 +123,40 @@ nav ul li a
 nav #flechita_nav a
 {
 	background: #22BCE0;
-	padding: 0.5em;
+	padding: 0.5em 0;
 	text-decoration: none;
 
 }
+nav #flechita_nav a:after
+{
+	content: "\e000";
+	font-family: "icomoon";
+	opacity: 0.6;
+	
+}
 nav #publicar_nav
 {
+	background: #DD4F24;
 	float: right;
 	margin-right: 0;
+	padding-right: 1em;
+	position: relative;
 }	
+nav #publicar_nav:after
+{
+	color: rgba(255,255,255,0.6);
+	content: "\e003";
+	margin: 0;
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+}
 nav #publicar_nav a
 {
-	background: #DD4F24;
+	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
 
@@ -171,6 +195,12 @@ nav #publicar_nav a
 	color: white;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
+}
+#contenido .item .datos_item .guardar_item:after
+{
+	color: #FD5;
+	content: "\e004";
+	font-family: "icomoon";
 }
 #contenido .item .datos_item .tag_item
 {
