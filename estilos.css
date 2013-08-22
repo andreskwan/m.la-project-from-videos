@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a
 {
 	color: #DD4F24;
@@ -64,7 +75,11 @@ header #avatar figcaption
 	height: 50px;
 	padding: 0 2px; 
 }
-
+header #avatar figcaption:after
+{
+	content: ;
+	font-family: "icomoon";
+}
 header #avatar img 
 {
 	width: 50px;
@@ -130,7 +145,8 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
-	margin: 3em 0;
+	margin-bottom: 3em;
+	min-height: 128px;
 	position: relative;
 }
 #contenido .item a
@@ -143,13 +159,18 @@ nav #publicar_nav a
 	font-size: 0.9em;
 
 }
-#contenido .item .autor_item a
+#contenido .item .datos_item
 {
 	
 }
-#contenido .item .datos_item
+#contenido .item .datos_item .comentarios_item
 {
-	display: inline-block;
+	
+	background-color: #22BCE0;
+	border-radius: 0.5em;
+	color: white;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
 }
 #contenido .item .datos_item .tag_item
 {
@@ -191,15 +212,38 @@ Position management
 /*
 identificar objeto
 */
-background: white;
-border: 3px solid red;
-margin: 3px 0 0 0;
-padding: 0.5em 0;
-position: absolute;
-text-align: center;
-width: 96px;
-
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 3px 0 0 0;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	top:100%;
+	width: 96px;
 }
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+#contenido .item .votacion .down:after
+{
+	color: red;
+	content: "\e001";
+	
+}
+#contenido .item .votacion .up:after
+{
+	color: green;
+	content: "\e002";
+} 
+ 
 
 
 
