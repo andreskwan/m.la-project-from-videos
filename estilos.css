@@ -155,6 +155,10 @@ nav #publicar_nav a
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
+#bienvenida
+{
+	display: none;
+}
 #contenido
 {
 	margin: 1em;
