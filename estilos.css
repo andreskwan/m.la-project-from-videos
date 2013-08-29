@@ -20,6 +20,19 @@ body
 	font-size: 16px;
 	margin: 0;
 }
+footer
+{
+	background: #434343;
+	color: #A7A7A7;
+	padding: 1em 0;
+	text-align: center;
+	width: 100%;
+
+}
+footer p 
+{
+	margin: 0;
+}
 header
 {
 	background: #434343;
@@ -168,7 +181,7 @@ nav #publicar_nav a
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
 	margin-bottom: 3em;
-	min-height: 128px;
+	min-height: 228px;
 	position: relative;
 }
 #contenido .item a
@@ -275,7 +288,24 @@ identificar objeto
 	color: green;
 	content: "\e002";
 } 
- 
+
+#info_mascota
+{
+	background-color: #666;
+	border-radius: 0.5em;
+	color: white;
+	padding: 1em 5em;
+	margin: 0;
+	text-decoration: none; 
+	position: absolute;
+	left: 0;
+
+}
+
+#info_mascota img
+{
+		width: 80px;
+} 
 
 
 
